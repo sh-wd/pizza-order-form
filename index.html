@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Plant Based Pizza online order">
+    <meta name="keywords" content="Vegan, Pizza, Plant Based, Order Online">
+    <meta name="author" content="S. Hynd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB Pizza</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1>P B Pizza</h1>
+      <h2>100% plant based 12" gluten free pizzas</h2>
+    </header>
+    
+    <form method="POST" action="order complete.html" enctype="text/plain">
+      <fieldset>
+        <legend><h3>pick your flavour</h3></legend>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <input type="radio" name="pizza choice" id="pepper passion">
+                <label
+                  for="pepper passion"><h4>Pepper Passion</h4>
+                  <p>green, red and yellow pepper, fresh chilli, red onion, cheese and tomato sugo</p>
+                  <img src="images/pepper passion.jpg" alt="pepper passion pizza">
+                </label>
+              </td>
+              <td>
+                <input type="radio" name="pizza choice" id="garden party">
+                <label
+                  for="garden party"><h4>Garden Party</h4>
+                  <p>mushroom, red onion, green pepper, fresh tomato, sweetcorn, cheese and tomato sugo</p>
+                  <img src="images/garden party.jpg" alt="garden party pizza">
+                </label>
+              </td>
+              <td>
+                <input type="radio" name="pizza choice" id="sweet and spicy">
+                <label
+                  for="sweet and spicy"><h4>Sweet and Spicy</h4>    
+                  <p>bbq jackfruit, red pepper, jalapeno, cheese and tomato sugo</p>           
+                  <img src="images/sweet spicy.jpg" alt="sweet and spicy pizza">
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" name="pizza choice" id="margherita">
+                <label
+                  for="margherita"><h4>Margherita</h4> 
+                  <p>sundried tomato, fresh basil, cheese and tomato sugo</p>
+                  <img src="images/margherita.jpg" alt="margherita pizza">
+                </label>
+              </td>
+              <td>
+                <input type="radio" name="pizza choice" id="mediterranean">
+                <label
+                  for="mediterranean"><h4>Mediterranean</h4>
+                  <p>mushroom, olive, sundried tomato, artichoke, cheese and tomato sugo</p>
+                  <img src="images/mediterranean.jpg" alt="mediterranean pizza">
+                </label>
+              </td>
+              <td>
+                <input type="radio" name="pizza choice" id="cyo">
+                <label
+                  for="cyo"><h4>Create Your Own</h4>
+                  <p>cheese, tomato sugo + any toppings you choose</p>
+                  <img src="images/cyo.jpg" alt="create your own pizza">
+                </label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      
+      <br><br>
+      
+      <fieldset>
+      <legend><h3>create your own / + toppings</h3></legend>
+        <table>
+          <tr>
+            <th>
+            <input type="checkbox"  id="tomato sugo">
+            <label for="tomato sugo" name="tomato sugo" id="tomato sugo">tomato sugo</label>
+            </th>
+            <th>
+            <input type="checkbox"  id="cheese">
+            <label for="cheese" name="cheese" id="cheese">cheese</label>
+            </th>
+            <th>
+            <input type="checkbox"  id="red onion">
+            <label for="red onion" name="red onion" id="red onion">red onion</label>
+            </th>
+            <th>
+            <input type="checkbox"  id="green pepper">
+            <label for="green pepper" name="green pepper" id="green pepper">green pepper</label>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input type="checkbox"  id="red pepper">
+              <label for="red pepper" name="red pepper" id="red pepper">red pepper</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="yellow pepper">
+            <label for="yellow pepper" name="yellow pepper" id="yellow pepper">yellow pepper</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="mushroom">
+              <label for="mushroom" name="mushroom" id="mushroom">mushroom</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="olive">
+              <label for="olive" name="olive" id="olive">olive</label>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input type="checkbox"  id="sundried tomato">
+              <label for="sundried tomato" name="sundried tomato" id="sundried tomato">sundried tomato</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="artichoke">
+              <label for="artichoke" name="artichoke" id="artichoke">artichoke</label>
+            <th>
+              <input type="checkbox"  id="sweetcorn">
+              <label for="sweetcorn" name="sweetcorn" id="sweetcorn">sweetcorn</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="bbq jackfruit">
+              <label for="bbq jackfruit" name="bbq jackfruit" id="bbq jackfruit">bbq jackfruit</label>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input type="checkbox"  id="jalapeno">
+              <label for="jalapeno" name="jalapeno" id="jalapeno">jalapeno</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="fresh chilli">
+              <label for="fresh chilli" name="fresh chilli" id="fresh chilli">fresh chilli</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="fresh tomato">
+              <label for="fresh tomato" name="fresh tomato" id="fresh tomato">fresh tomato</label>
+            </th>
+            <th>
+              <input type="checkbox"  id="fresh basil">
+              <label for="fresh basil" name="fresh basil" id="fresh basil">fresh basil</label>
+            </th>
+          </tr>
+        </table>
+        
+        <br><br>
+      
+        <textarea name="dietary" id="textarea" cols="100" rows="3" placeholder="please make us aware of any dietary requirements"></textarea>
+      </fieldset>
+      
+      <br><br>
+      
+      <fieldset>
+        <legend><h3>contact</h3></legend>
+          <label for="email"><h5>Please enter your email</h5></label><br>
+          <input type="email" name="email address" id="email"  placeholder="name@example.com">
+          
+          <br><br>
+          
+          <label for="address"><h5>Please enter your delivery address</h5></label><br>
+          <input type="text" placeholder="address line 1" required><br>
+          <input type="text" placeholder="address line 2 (optional)"><br>
+          <input type="text" placeholder="town/city" required><br>
+          <input type="text" placeholder="county" required><br>
+          <input type="text" placeholder="postcode" required>
+          
+          <br><br>
+          
+          <label for="phone"><h5>Please enter a contact number</h5></label><br>
+          <input type="tel" id="phone" name="phone" placeholder="07123 456 789" required>
+          
+          <br><br>
+          
+          <textarea name="delivery instructions" id="textarea" cols="100" rows="3" placeholder="please add any additional information for the delivery driver"></textarea>
+      </fieldset>
+      <br><br>
+      
+      <fieldset>
+        <legend><h3>payment</h3></legend>
+      <table>
+        <thead>
+          <th>
+            <input type="radio" name="payment" id="paycard">
+            <label for="paycard">💳 card</label>
+          </th>
+          <th>  
+            <input type="radio" name="payment" id="paycash">
+            <label for="paycash">💷 cash</label>
+          </th>
+         </thead>
+      </table>
+        
+      <br><br>
+      
+      <label for="paymentcard"><h5>Please enter your card details</h5></label><br>
+      <input type="text" placeholder="card holder's full name"><br>
+      <input type="text" minlength="16" maxlength="16" placeholder="16 digit card number" pattern="[0-9]{16}"><br>
+      <input type="text" placeholder="expiry date mm/yy" pattern="[0-1]{1}[0-9]{1}/[1-2]{1}[0-9]{1}"><br>
+      <input type="password" minlength="3" maxlength="3" placeholder="CVV">
+      
+      <br><br>
+      
+      <label for="address"><h5>Please enter your billing address</h5></label><br>
+      <input type="text" placeholder="address line 1" required><br>
+      <input type="text" placeholder="address line 2 (optional)"><br>
+      <input type="text" placeholder="town/city" required><br>
+      <input type="text" placeholder="county" required><br>
+      <input type="text" placeholder="postcode" minlength="6" maxlength="7" required>
+      </fieldset>
+      
+      <br><br>
+      
+      <button type="submit">order and pay</button>
+     </form>
+    
+    <footer>
+    </footer>
+    
+  </body>
+</html>
